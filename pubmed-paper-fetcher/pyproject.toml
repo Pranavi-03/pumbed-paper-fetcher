@@ -1,0 +1,26 @@
+[project]
+name = "pubmed-paper-fetcher"
+version = "0.1.0"
+description = "CLI tool to fetch research papers with non-academic authors from PubMed"
+authors = [
+    {name = "Pranavi",email = "saipranavi136@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = "^3.10"
+dependencies = [
+    "requests (>=2.32.4,<3.0.0)",
+    "pandas (>=2.3.1,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.16.1"
+
+
+
+
